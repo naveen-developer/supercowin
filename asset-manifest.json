@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/supercowin/static/css/main.aae8459e.chunk.css",
-    "main.js": "/supercowin/static/js/main.15763dff.chunk.js",
-    "main.js.map": "/supercowin/static/js/main.15763dff.chunk.js.map",
+    "main.css": "/supercowin/static/css/main.0970f200.chunk.css",
+    "main.js": "/supercowin/static/js/main.5650e0b9.chunk.js",
+    "main.js.map": "/supercowin/static/js/main.5650e0b9.chunk.js.map",
     "runtime-main.js": "/supercowin/static/js/runtime-main.56f99eee.js",
     "runtime-main.js.map": "/supercowin/static/js/runtime-main.56f99eee.js.map",
     "static/css/2.ecdd39c8.chunk.css": "/supercowin/static/css/2.ecdd39c8.chunk.css",
@@ -10,14 +10,14 @@
     "static/js/2.da26ee21.chunk.js.map": "/supercowin/static/js/2.da26ee21.chunk.js.map",
     "index.html": "/supercowin/index.html",
     "static/css/2.ecdd39c8.chunk.css.map": "/supercowin/static/css/2.ecdd39c8.chunk.css.map",
-    "static/css/main.aae8459e.chunk.css.map": "/supercowin/static/css/main.aae8459e.chunk.css.map",
+    "static/css/main.0970f200.chunk.css.map": "/supercowin/static/css/main.0970f200.chunk.css.map",
     "static/js/2.da26ee21.chunk.js.LICENSE.txt": "/supercowin/static/js/2.da26ee21.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.56f99eee.js",
     "static/css/2.ecdd39c8.chunk.css",
     "static/js/2.da26ee21.chunk.js",
-    "static/css/main.aae8459e.chunk.css",
-    "static/js/main.15763dff.chunk.js"
+    "static/css/main.0970f200.chunk.css",
+    "static/js/main.5650e0b9.chunk.js"
   ]
 }
