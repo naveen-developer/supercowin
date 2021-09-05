@@ -110,6 +110,29 @@ body{padding: 50px;}
   }
 
 
+.Dropdown-root{
+  width: 100%;
+  text-align: center;
+}
+
+
+.customizeSelect{
+  font-size: 17px;
+  position: relative;
+  margin: 24px 0 10px 10px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  box-sizing: border-box;
+  color: #333;
+  cursor: default;
+  outline: none;
+  font-weight: bold;
+  padding: 8px 52px 8px 10px;
+  transition: all 200ms ease;
+}
+
+
   @media screen and (max-width: 600px) {
     body {
       padding: 15px;

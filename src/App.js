@@ -4,15 +4,16 @@ import "./Style.css"
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
-
 function App() {
 
 const [data, setData] = useState([]);
 
 const [formData, setFormData] = useState({
   vtype : "Free",
-  dtype : "dose1"
+  dtype : "dose1",
+  location: "392"
 });
+
 
 const [startDate, setStartDate] = useState(new Date());
 let dayNumber = startDate.getDate();
@@ -20,7 +21,7 @@ let dayMonth = startDate.getMonth() + 1;
 
 
 
-const { vtype, dtype } = formData;
+const { vtype, dtype, location } = formData;
 
 const handleChange = event => {
   const { name, value } = event.target;
@@ -33,21 +34,19 @@ const handleChange = event => {
 
 
 useEffect(() => {
-  Axios.get("https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByDistrict?district_id=392&date="+dayNumber+"-"+dayMonth+"-2021")
+  Axios.get("https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByDistrict?district_id="+location+"&date="+dayNumber+"-"+dayMonth+"-2021")
   .then( res => setData(res.data.centers));
-}, [dayNumber, dayMonth])
-
-
+}, [location, dayNumber, dayMonth])
 
 
 
   return (
     <div className="App">
       <h1>Supper Cowin App</h1>
-      <p>Selected dose type {dtype}</p>
       <div className="filtersDiv">
+
         <div className="vacinetypeDiv">
-        <label className="container">Free
+          <label className="container">Free
             <input type="radio" value="Free" name="vtype" onChange={handleChange} checked={vtype === "Free"}   />
             <span className="checkmark"></span>
           </label>
@@ -58,6 +57,19 @@ useEffect(() => {
         </div>
 
         <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} />
+
+        <div className="Dropdown-root">
+          <div className="locationDiv">
+          <label>Selected Location</label>
+          <select className="customizeSelect" name="location" onChange={handleChange}>
+            <option value="392"> Thane </option>
+            <option value="395"> Mumbai </option>
+            <option value="363"> Pune </option>
+            <option value="389"> Nashik </option>
+          </select>
+          </div>
+        </div>
+
 
         <div className="vacinetypeDiv">
         <label className="container">Dose 1
